@@ -12,7 +12,6 @@
 //
 //= require jquery
 //= require bootstrap-sprockets
-//= require admin-lte/dist/js/adminlte.min.js
 //= require rails-ujs
 //= require turbolinks
 //= require_tree .
