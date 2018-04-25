@@ -284,7 +284,7 @@
       <updated>1524609327582</updated>
       <workItem from="1524609329679" duration="7091000" />
       <workItem from="1524677596669" duration="1728000" />
-      <workItem from="1524683719742" duration="254000" />
+      <workItem from="1524683719742" duration="495000" />
     </task>
     <task id="LOCAL-00001" summary="Add adminlte js">
       <created>1524615982845</created>
@@ -304,7 +304,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="9073000" />
+    <option name="totallyTimeSpent" value="9314000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1280" height="800" extended-state="0" />
