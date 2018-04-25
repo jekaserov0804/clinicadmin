@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1902638b-bf09-46df-b2b6-b215e395f2d2" name="Default" comment="" />
+    <list default="true" id="1902638b-bf09-46df-b2b6-b215e395f2d2" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/Gemfile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/Gemfile.lock" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -53,9 +55,10 @@
   <component name="NodeModulesDirectoryManager">
     <handled-path value="$PROJECT_DIR$/node_modules" />
   </component>
-  <component name="ProjectFrameBounds" fullScreen="true">
+  <component name="ProjectFrameBounds">
+    <option name="x" value="672" />
     <option name="y" value="23" />
-    <option name="width" value="1280" />
+    <option name="width" value="608" />
     <option name="height" value="724" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -284,7 +287,7 @@
       <updated>1524609327582</updated>
       <workItem from="1524609329679" duration="7091000" />
       <workItem from="1524677596669" duration="1728000" />
-      <workItem from="1524683719742" duration="495000" />
+      <workItem from="1524683719742" duration="777000" />
     </task>
     <task id="LOCAL-00001" summary="Add adminlte js">
       <created>1524615982845</created>
@@ -304,7 +307,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="9314000" />
+    <option name="totallyTimeSpent" value="9596000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1280" height="800" extended-state="0" />
