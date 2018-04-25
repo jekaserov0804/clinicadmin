@@ -19,11 +19,12 @@ default: &default
   encoding: unicode
   username: zena
   password: 08041996
+  host: localhost
   # For details on connection pooling, see Rails configuration guide
   # http://guides.rubyonrails.org/configuring.html#database-pooling
   pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
 
-developmenheroku run rake db:migratet:
+development:
   <<: *default
   database: clinic_development
 
