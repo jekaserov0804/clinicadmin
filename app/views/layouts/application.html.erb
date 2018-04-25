@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Велес</title>
+    <%= csrf_meta_tags %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body class="hold-transition skin-blue sidebar-mini ">
+  <div class="wrapper">
+
+    <!-- Main Header -->
+    <%= render :partial => 'shared/header' %>
+    <!-- Left side column. contains the logo and sidebar -->
+    <%= render :partial => 'shared/sidebar' %>
+    <!-- Content Wrapper. Contains page content -->
+    <div class="content-wrapper">
+      <!-- Content Header (Page header) -->
+      <%= yield %>
+
+    </div>
+    <!-- /.content-wrapper -->
+    <%= render :partial => 'shared/footer' %>
+
+  </div>
+
+  </body>
+</html>

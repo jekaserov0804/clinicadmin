@@ -1,0 +1,12 @@
+{
+  "name": "apmcheck-admin",
+  "private": true,
+  "engines": {
+    "node": "8.9.x",
+    "yarn": "1.2.1"
+  },
+  "dependencies": {
+    "admin-lte": "2.4.0",
+    "async": "2.5.0"
+  }
+}

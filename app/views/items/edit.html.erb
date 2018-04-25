@@ -1,0 +1,105 @@
+<!-- Main content -->
+
+<section class="content container-fluid">
+  <div class="box col-md-12 col-xs-12 col-sm-12">
+    <div class="box-header with-border">
+      <h3 class="box-title">Редактирование товара</h3>
+    </div>
+    <%= form_for @item, url: item_path do |f| %>
+      <br/>
+      <div class="row">
+        <div class="col-md-12 col-sm-12 col-xs-12">
+          <div class="col-md-5 col-sm-8 col-xs-12">
+            <div class="form-group">
+              <%= f.label :name %>
+              <%= f.text_field :name, class: 'form-control' %>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-12 col-sm-12 col-xs-12">
+          <div class="col-md-5 col-sm-8 col-xs-12">
+            <div class="form-group">
+              <%= f.label :price %>
+              <%= f.text_field :price, class: 'form-control' %>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-12 col-sm-12 col-xs-12">
+          <div class="col-md-5 col-sm-8 col-xs-12">
+            <div class="form-group">
+              <%= f.label :form_of_issue %>
+              <%= f.text_field :form_of_issue, class: 'form-control' %>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-12 col-sm-12 col-xs-12">
+          <div class="col-md-5 col-sm-8 col-xs-12">
+            <div class="form-group">
+              <%= f.label :indications %>
+              <%= f.text_field :indications, class: 'form-control' %>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-12 col-sm-12 col-xs-12">
+          <div class="col-md-5 col-sm-8 col-xs-12">
+            <div class="form-group">
+              <%= f.label :contraindications %>
+              <%= f.text_field :contraindications, class: 'form-control' %>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-12 col-sm-12 col-xs-12">
+          <div class="col-md-5 col-sm-8 col-xs-12">
+            <div class="form-group">
+              <%= f.label :side_effects %>
+              <%= f.text_field :side_effects, class: 'form-control' %>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-12 col-sm-12 col-xs-12">
+          <div class="col-md-5 col-sm-8 col-xs-12">
+            <div class="form-group">
+              <%= f.label :mode_of_application %>
+              <%= f.text_field :mode_of_application, class: 'form-control' %>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-12 col-sm-12 col-xs-12">
+          <div class="col-md-5 col-sm-8 col-xs-12">
+            <div class="form-group">
+              <%= f.label :reg_data %>
+              <%= f.text_field :reg_data, class: 'form-control' %>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-12 col-sm-12 col-xs-12">
+          <div class="col-md-5 col-sm-8 col-xs-12">
+            <div class="form-group">
+              <%= f.label :category %>
+              <%= f.text_field :category, class: 'form-control' %>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-12 col-sm-12 col-xs-12">
+          <div class="col-md-5 col-sm-8 col-xs-12">
+            <div class="form-group">
+              <%= f.label :photo %>
+              <%= f.file_field :photo %>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-12 col-sm-12 col-xs-12">
+          <div class="col-md-5 col-sm-8 col-xs-12 ">
+            <div class="form-group">
+              <%= f.submit 'Обновить', class: 'btn btn-primary' %>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    <% end %>
+
+  </div>
+
+</section>
+<!-- /.content -->

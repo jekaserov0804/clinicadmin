@@ -1,0 +1,69 @@
+<!-- Main content -->
+<section class="content container-fluid">
+
+  <div class="box">
+    <div class="box-header">
+      <h3 class="box-title col-md-4">Товары</h3>
+      <div class="col-md-2 col-md-offset-5 ">
+        <%= link_to 'Новый товар', new_item_path, class: 'btn btn-primary' %>
+      </div>
+    </div>
+    <div class="box-body">
+      <div id="show_accounts">
+        <table id="datatable" class="table table-bordered table-striped dataTable">
+          <thead>
+          <tr>
+            <th>name</th>
+            <th>price</th>
+            <th>form_of_issue</th>
+            <th>category</th>
+            <th>photo</th>
+            <th>Действие</th>
+          </tr>
+          </thead>
+          <tbody>
+          <% @items.each do |item| %>
+            <tr>
+              <td><%= item.try(:name) %></td>
+              <td><%= item.try(:price) %></td>
+              <td><%= item.try(:form_of_issue) %></td>
+              <td><%= item.try(:category) %></td>
+              <td><%= image_tag item.photo, class: 'image', id: 'image_request', 'data-toggle': 'modal', 'data-target': '#myModal' %></td>
+              <td>
+                <%= link_to edit_item_path(item), class: 'btn btn-xs' do %>
+                  <i class="fa fa-pencil"></i>
+                <% end %>
+                <%= link_to item_path(item), method: :delete, data: {confirm: 'Точно удалить ?'}, class: 'btn btn-xs' do %>
+                  <i class="fa fa-trash"></i>
+                <% end %>
+              </td>
+            </tr>
+          <% end %>
+          </tbody>
+        </table>
+
+        <div class="modal fade" id="myModal" role="dialog">
+          <div class="modal-dialog">
+
+            <!-- Modal content-->
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title"><%= t('clarifai_search_requests.attributes.image_url') %></h4>
+              </div>
+              <div class="modal-body modal-image">
+                <img id="modal_body_image">
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal"><%= t('buttons.close') %></button>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- /.content -->
+
